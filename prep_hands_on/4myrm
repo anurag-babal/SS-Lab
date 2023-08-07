@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in $@; do
+	if [ -f $i ]; then
+		if [ ! -d .recyclebin ]; then
+			mkdir -p .recyclebin
+		fi
+		mv $i .recyclebin
+		echo "File $i deleted"
+	else
+		echo "File $i not exist"
+	fi
+done
