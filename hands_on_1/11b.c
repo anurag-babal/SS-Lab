@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 11b.c
+Author : Anurag Babal
+Description : Write a program to open a file, duplicate the file descriptor and append the file with both the
+descriptors and check whether the file is updated properly or not.
+	b. use dup2
+Date: 20th Aug, 2023.
+============================================================================
+*/
+
 #include<unistd.h>
 #include<fcntl.h>
 #include<stdio.h>

@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 11c.c
+Author : Anurag Babal
+Description : Write a program to open a file, duplicate the file descriptor and append the file with both the
+descriptors and check whether the file is updated properly or not.
+	c. use fcntl
+Date: 20th Aug, 2023.
+============================================================================
+*/
+
 #include<unistd.h>
 #include<fcntl.h>
 #include<stdio.h>

@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 27b.c
+Author : Anurag Babal
+Description : Write a program to execute ls -Rl by the following system calls
+	b. execlp
+Date: 08th Sept, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 

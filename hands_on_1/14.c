@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 14.c
+Author : Anurag Babal
+Description : Write a program to find the type of a file.
+Date: 20th Aug, 2023.
+============================================================================
+*/
+
 #include<unistd.h>
 #include<sys/types.h>
 #include<sys/stat.h>

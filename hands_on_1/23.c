@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 23.c
+Author : Anurag Babal
+Description : Write a program to create a Zombie state of the running program.
+Date: 08th Sept, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 

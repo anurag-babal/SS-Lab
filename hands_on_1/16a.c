@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 16a.c
+Author : Anurag Babal
+Description : Write a program to perform mandatory locking.
+	a. Implement write lock
+Date: 25th Aug, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>

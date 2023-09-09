@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 25.c
+Author : Anurag Babal
+Description : Write a program to create three child processes. The parent should wait for a particular child (use
+waitpid system call).
+Date: 08th Sept, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/wait.h>

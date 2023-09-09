@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 6.c
+Author : Anurag Babal
+Description : Write a program to copy file1 into file2 ($cp file1 file2).
+Date: 20th Aug, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>

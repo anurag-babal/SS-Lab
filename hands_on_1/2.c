@@ -1,20 +1,14 @@
 /*
 ============================================================================
-Name : 4.c
+Name : 2.c
 Author : Anurag Babal
-Description :  Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Description :  Write a simple program to execute in an infinite loop at the background. Go to /proc directory and
+identify all the process related information in the corresponding proc directory.
 Date: 11th Aug, 2023.
 ============================================================================
 */
 
-#include<stdio.h>
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
-
 int main(void) {
-	int fd = open("abc", O_RDWR);
 	while(1);
 	return 0;
 }
