@@ -1,10 +1,10 @@
 /*
 ============================================================================
-Name : 27a.c
+Name : 27b.c
 Author : Anurag Babal
 Description : Write a program to receive messages from the message queue.
-    a. with 0 as a flag
-Date: 29th Sept, 2023.
+    a. with IPC_NOWAIT as a flag
+Date: 19th Sept, 2023.
 ============================================================================
 */
 
@@ -23,7 +23,7 @@ int main(void) {
 
     printf("Enter msg type: ");
     scanf("%d", &mq.mtype);
-    msgrcv(msgid, &mq, sizeof(mq.mtext), mq.mtype, 0);
+    msgrcv(msgid, &mq, sizeof(mq.mtext), mq.mtype, IPC_NOWAIT);
     printf("Message : %s", mq.mtext);
 
     return 0;

@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 26a.c
+Name : 26.c
 Author : Anurag Babal
 Description : Write a program to send messages to the message queue. Check $ipcs -q
 Date: 19th Sept, 2023.
@@ -23,6 +23,7 @@ int main(void) {
     printf("Key: 0x%0x, msg-id: %d\n", key, msgid);
     printf("Enter msg type: ");
     scanf("%ld", &mq.mtype);
+    fflush(stdin);
     printf("Enter message: ");
     scanf("%[^\n]", mq.mtext);
     int size = strlen(mq.mtext);

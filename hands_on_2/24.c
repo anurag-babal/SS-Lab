@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 23.c
+Name : 24.c
 Author : Anurag Babal
 Description : Write a program to create a message queue and print the key and message queue id.
 system call with FIFO.
