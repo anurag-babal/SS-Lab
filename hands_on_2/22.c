@@ -21,7 +21,7 @@ int main(void) {
     
     FD_ZERO(&readfds);
     FD_SET(fd, &readfds);
-    tv.tv_sec = 5;
+    tv.tv_sec = 10;
     tv.tv_usec = 0;
 
     int available = select(fd+1, &readfds, NULL, NULL, &tv);

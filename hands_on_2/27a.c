@@ -15,16 +15,17 @@ Date: 29th Sept, 2023.
 
 int main(void) {
     struct msg {
-        int mtype;
+        long mtype;
         char mtext[20];
     } mq;
     key_t key = ftok(".", 2);
-    int msgid = msgget(key, 0);
+    int msgid = msgget(key, IPC_CREAT | 0600);
 
     printf("Enter msg type: ");
-    scanf("%d", &mq.mtype);
+    scanf("%ld", &mq.mtype);
+
     msgrcv(msgid, &mq, sizeof(mq.mtext), mq.mtype, 0);
-    printf("Message : %s", mq.mtext);
+    printf("Message : %s\n", mq.mtext);
 
     return 0;
 }
