@@ -30,6 +30,7 @@ int main(void) {
     write(sd, "Hello\n", 6);
     read(sd, buff, sizeof(buff));
     printf("Message from Server: %s\n", buff);
+    getchar();
 
     return 0;
 }
